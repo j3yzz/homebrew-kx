@@ -5,20 +5,20 @@
 class Kx < Formula
   desc "Faster Kubernetes CLI - exec, forward and secrets by application name"
   homepage "https://github.com/j3yzz/kx"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/j3yzz/kx/releases/download/v1.0.0/kx_1.0.0_darwin_amd64.tar.gz"
-      sha256 "7510473419cb8f18306e8e9d522ae3ff4e564188b8d2f2fcf2dda5dafa2e0ff2"
+      url "https://github.com/j3yzz/kx/releases/download/v1.0.1/kx_1.0.1_darwin_amd64.tar.gz"
+      sha256 "28c13317fc4ffec76aeaee0ecdb5d2d2a2a252435cc3229f31ee9f828a993e55"
 
       define_method(:install) do
         bin.install "kx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/j3yzz/kx/releases/download/v1.0.0/kx_1.0.0_darwin_arm64.tar.gz"
-      sha256 "bab4887f41c880cf4372337bcbae1c78702b3d97fdacfcbc15b6508e39ebf603"
+      url "https://github.com/j3yzz/kx/releases/download/v1.0.1/kx_1.0.1_darwin_arm64.tar.gz"
+      sha256 "ce67a9d8f5241acb64e155777cc13244e657134db611680964859658d7058334"
 
       define_method(:install) do
         bin.install "kx"
@@ -28,15 +28,15 @@ class Kx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/j3yzz/kx/releases/download/v1.0.0/kx_1.0.0_linux_amd64.tar.gz"
-      sha256 "2272571e02b2cac3ef9ec5e629f497b00b21ddbfd3f3f29aa3c546ccc4c4196c"
+      url "https://github.com/j3yzz/kx/releases/download/v1.0.1/kx_1.0.1_linux_amd64.tar.gz"
+      sha256 "8b127103b1c00dfbe3ce77276bcc3c6b29b372fbec534b011f75c6564c816b61"
       define_method(:install) do
         bin.install "kx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/j3yzz/kx/releases/download/v1.0.0/kx_1.0.0_linux_arm64.tar.gz"
-      sha256 "ad9e5bba4590ea98442bb5935bcf8b0b8df5d67772564748a80b8aa2a21b1d87"
+      url "https://github.com/j3yzz/kx/releases/download/v1.0.1/kx_1.0.1_linux_arm64.tar.gz"
+      sha256 "8093a7f71184456b3f36b19ac85922c0b1d6fbf1a721c33adaef3f44f7cfeee2"
       define_method(:install) do
         bin.install "kx"
       end
